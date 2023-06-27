@@ -8,7 +8,7 @@ const About = () => {
     <div className='about'>
       <div className='container'>
         <div className='summary'>
-          <h1 className='highlight'>A few paragraphs about me.</h1>
+          <h1 className='highlight'>About me.</h1>
           <div className='sub-container'>
             <p>I started developing software in June 2022. I thoroughly enjoy programming and building software and see it as my natural vocation. 
               I am looking for a full-time position as a software developer/engineer with a company that can provide good growth potential. 
