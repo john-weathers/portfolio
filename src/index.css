@@ -64,3 +64,12 @@ a:hover, a:visited, a:active {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+
+.destyled-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 16px;
+}
