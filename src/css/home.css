@@ -1,0 +1,163 @@
+.home {
+  height: calc(100vh - 50px);
+  background-color: rgb(249, 252, 255);
+}
+
+.home .flex-container {
+  width: fit-content;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.home h1 {
+  font-weight: 600;
+}
+
+.home .flex-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 500ms;
+}
+
+.home .sub-title {
+  transition: all 500ms;
+}
+
+.home .flex-2 span {
+  font-size: 20px;
+}
+
+.home .flex-1:hover .flex-2 {
+  font-size: 0.8rem;
+}
+
+.home .flex-1:hover .sub-title {
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.home .emoji {
+  font-size: 32px;
+}
+
+.home a {
+  color: rgb(0, 0, 151);
+  /* #AB2346;*/
+  text-decoration: none;
+}
+
+.home .flex-1:hover .emoji {
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate( 0.0deg)
+  }
+  10% {
+    transform: rotate(14.0deg)
+  }
+  20% {
+    transform: rotate(-8.0deg)
+  }
+  30% {
+    transform: rotate(14.0deg)
+  }
+  40% {
+    transform: rotate(-4.0deg)
+  }
+  50% {
+    transform: rotate(10.0deg)
+  }
+  60% {
+    transform: rotate( 0.0deg)
+  }
+  100% {
+    transform: rotate( 0.0deg)
+  }
+}
+
+
+
+.home .flex-1 {
+  background-color: white;
+  width: 450px;
+  height: 300px;
+  border-radius: 50%;
+  border: 8px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*transition: all 1.5s;*/
+}
+
+/*.home .flex-1:hover {
+  border-color: rgb(0, 80, 107);
+}*/
+
+.home .my-photo {
+  box-sizing: content-box;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid black;
+  background-image: url('/me.jpg');
+  background-size: cover;
+  transition: all 300ms;
+}
+
+.home .photo-link {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(249, 252, 255, 0);
+  color: rgba(0, 0, 0, 0);
+  font-weight: 700;
+  width: 200px;
+  height: 100px;
+  transition: all 300ms;
+  line-height: 100px;
+}
+
+.home .my-photo:hover .photo-link {
+  background-color: rgba(249, 252, 255, 0.5);
+  color: rgba(0, 0, 0, 1);
+}
+
+.home .my-photo:hover .photo-link.one {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.home .my-photo:hover .photo-link.two {
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.home .photo-link.one {
+  border-radius: 150px 150px 0 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.home .photo-link.one:hover {
+  background-color: rgba(249, 252, 255, 0.8);
+  font-size: 19px;
+}
+
+.home .photo-link.two {
+  border-radius: 0 0 150px 150px;
+  top: 50%;
+  border-top: 2px solid rgba(0, 0, 0, 0);
+}
+
+.home .photo-link.two:hover {
+  background-color: rgba(249, 252, 255, 0.8);
+  font-size: 19px;
+}

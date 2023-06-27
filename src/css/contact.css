@@ -1,0 +1,61 @@
+.contact {
+  height: calc(100vh - 50px);
+  background-color: rgb(249, 252, 255);
+  padding-top: 100px;
+}
+
+.contact .container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact .flex-container {
+  align-items: center;
+  height: 348px;
+  width: 1045px;
+  justify-content: center;
+}
+
+.contact .card-container {
+  width: 348px;
+  margin: 0 auto;
+}
+
+.contact .card {
+  margin: 0 auto;
+  box-sizing: content-box;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 4px solid rgb(1, 40, 53);
+  padding: 0;
+  transition: all 400ms;
+}
+
+.contact .card:hover {
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(1, 40, 53);
+}
+
+.contact .card a {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: rgb(0, 80, 107);
+  font-size: 18px;
+  transition: all 400ms;
+}
+
+.contact .card:hover a {
+  color: black;
+}
