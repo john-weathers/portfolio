@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
 import '../css/about.css';
 
 const About = () => {
-  const [showText, setShowText] = useState(false);
+  const { pageHeight } = useOutletContext();
 
   return (
-    <div className='about'>
+    <div className='about' style={{ height: pageHeight }}>
       <div className='container'>
         <div className='summary'>
           <h1 className='highlight'>About me.</h1>
@@ -23,9 +24,12 @@ const About = () => {
               with minimal instruction, if needed.</p>
           </div>
         </div>
-        <div className='resume' onMouseOver={() => setShowText(true)} onMouseOut={() => setShowText(false)} style={{ paddingRight: !showText ? 0 : 5 }}>
-          <a href='/resume.pdf' target='_blank' style={{ borderRight: !showText ? 0 : '4px solid rgb(1, 40, 53)' }}><img src='/download.svg'/></a>
-          {showText && <p>Download<br />Resume</p>}
+        <div className='resume'>
+          <a href='/resume.pdf' target='_blank'><img src='/download.svg'/></a>
+          <div className='flex-container'>
+            <span className='emoji'>👈</span>
+            <span className='word'>Resume</span>
+          </div>
         </div>
       </div>
     </div>
