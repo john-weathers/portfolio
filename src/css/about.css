@@ -1,5 +1,4 @@
 .about {
-  height: calc(100vh - 50px);
   background-color: rgb(249, 252, 255);
   padding-top: 100px;
 }
@@ -25,17 +24,16 @@
 }
 
 .about .resume {
-  margin: 10px auto;
+  margin: 45px auto 0 auto;
+  padding-bottom: 60px;
   display: flex;
-  width: fit-content;
+  width: 310px;
   border-radius: 4px;
   height: 68px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 5px;
-  background-color: white;
   color: rgb(1, 40, 53);
-  border: 4px solid rgb(1, 40, 53);
 }
 
 .about .resume p {
@@ -44,6 +42,7 @@
 }
 
 .about .resume a {
+  position: absolute;
   display: block;
   width: 60px;
   height: 60px;
@@ -51,10 +50,121 @@
   background-color: rgb(0, 80, 107);
   text-align: center;
   line-height: 60px;
+  border: 4px solid rgb(1, 40, 53);
 }
 
+
+
 .about .resume img {
-  margin-top: 8px;
+  margin: 4px auto 0 auto;
+  display: block;
   width: 44px;
   height: 44px;
+}
+
+.about .resume .flex-container {
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 120px;
+}
+
+.about .resume span {
+  font-weight: 600;
+}
+
+.about .resume .emoji {
+  color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+}
+
+.about .resume .word {
+  color: rgba(0, 0, 0, 0);
+}
+
+/*.about .resume a:hover + div .emoji {
+  color: rgba(0, 0, 0, 1);
+}*/
+
+.about .resume a:hover + div .emoji {
+  animation-name: point, appear;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  transform-origin: center;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+
+  49% {
+    transform: translateX(0.5em);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  49% {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.about .resume a:hover + div .word {
+  animation-name: flash;
+  animation-duration: 500ms;
+  animation-iteration-count: 4;
+  transform-origin: center;
+}
+
+@keyframes flash {
+  0% {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  49% {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .resume .emoji, .about .resume .word {
+    color:rgba(0, 0, 0, 1);
+  }
+
+  .about .resume .flex-container {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .about .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding-top: 40px;
+  }
 }
