@@ -1,11 +1,14 @@
+import { useOutletContext } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../css/contact.css';
 
 const Contact = () => {
+  const { pageHeight } = useOutletContext();
+
   return (
-    <div className='contact'>
+    <div className='contact' style={{ height: pageHeight }}>
       <div className='container'>
         <h1 className='highlight'>Contact me.</h1>
         <div className='flex-container'>
