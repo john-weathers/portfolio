@@ -10,7 +10,6 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  /*scrollbar-gutter: stable;*/
 }
 
 *, *:before, *:after {

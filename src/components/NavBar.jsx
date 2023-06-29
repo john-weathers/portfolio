@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import '../css/nav.css';
 
 const NavBar = () => {
@@ -10,7 +8,6 @@ const NavBar = () => {
   const [mobileHeight, setMobileHeight] = useState(null);
 
   useEffect(() => {
-    // another approach could be using a scroll/wheel event to close the mobile dropdown menu
     const scrollHeight = document.body.scrollHeight;
     if (window.innerHeight >= scrollHeight) {
         setMobileHeight(window.innerHeight)

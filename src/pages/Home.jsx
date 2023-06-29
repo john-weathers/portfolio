@@ -54,5 +54,3 @@ const Home = () => {
   )
 }
 export default Home
-
-// <p className='home-p'>My name is John Weathers, pleased to e-meet you <span>🤝</span></p>

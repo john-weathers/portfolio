@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../css/projects.css';
 
 const projects = {
