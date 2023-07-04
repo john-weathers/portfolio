@@ -19,14 +19,19 @@ const Projects = () => {
           <div className='card'>
             <button 
               onClick={() => setProject(projects.fixerApp)} 
-              className={project[2] === '/fixerapp' ? 'clicked destyled-btn part-1' : 'destyled-btn part-1'}
+              className={project[2] === projects.fixerApp[2] ? 'clicked destyled-btn part-1' : 'destyled-btn part-1'}
             >
               fixer
               <span className='part-2'>app</span>
             </button>
           </div>
           <div className='card'>
-            <button onClick={() => setProject(projects.comingSoon)} className={project[2] === '/comingSoon' ? 'clicked destyled-btn' : 'destyled-btn'} >coming soon...</button>
+            <button 
+              onClick={() => setProject(projects.comingSoon)} 
+              className={project[2] === projects.comingSoon[2] ? 'clicked destyled-btn' : 'destyled-btn'} 
+            >
+              coming soon...
+            </button>
           </div>
         </div>
         <div className={project?.length > 0 ? 'description show' : 'description hide'}>
