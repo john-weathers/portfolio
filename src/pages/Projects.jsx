@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 import '../css/projects.css';
 
 const projects = {
-  fixerApp: [['fixer', 'app'], 'Full-stack MERN app for hiring repair professionals', 'https://fixerapp.onrender.com', '#680982'],
+  fixerApp: [['fixer', 'app'], 'Full-stack MERN app for hiring repair professionals', 'https://fixerapp.johnweathers.dev', '#680982'],
   comingSoon: ['coming soon...', 'This project and description is coming soon...', '/comingSoon', null],
 }
 
