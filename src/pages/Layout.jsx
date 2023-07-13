@@ -3,14 +3,11 @@ import { Outlet } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 
 const Layout = () => {
+  const [scrollHeightCheck, setScrollHeightCheck] = useState(false);
   const [pageHeight, setPageHeight] = useState(() => {
     if (document.body.scrollHeight === 0) {
       setTimeout(() => {
-        if (window.innerHeight >= document.body.scrollHeight) {
-          return 'calc(100vh - 50px)';
-        } else {
-          return '100%';
-        }
+        setScrollHeightCheck(true);
       }, 200)
     } else {
       if (window.innerHeight >= document.body.scrollHeight) {
@@ -36,6 +33,14 @@ const Layout = () => {
       window.removeEventListener('resize', handleResize);
     }
   }, []);
+
+  useEffect(() => {
+    if (window.innerHeight >= document.body.scrollHeight) {
+      setPageHeight('calc(100vh - 50px)');
+    } else {
+      setPageHeight('100%');
+    }
+  }, [scrollHeightCheck])
 
   return (
     <div>
