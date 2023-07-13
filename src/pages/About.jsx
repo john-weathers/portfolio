@@ -12,7 +12,7 @@ const About = () => {
           <div className='sub-container'>
             <p>I started developing software in June 2022. I thoroughly enjoy programming and building software and see it as my natural vocation. 
               I am looking for a full-time position as a software developer/engineer with a company that can provide good growth potential. 
-              My focus has been on full-stack web development using the MERN stack. I want to continue building/expanding my skillset as a developer and, being a quick learner, 
+              My focus has been on full-stack web development. I want to continue building/expanding my skillset as a developer and, being a quick learner, 
               I know I will provide great value for any organization that I work with. </p>
             <p>Prior to starting software development, the bulk of my work was in the legal field, which in my opinion helped jumpstart my learning. 
               For example, I believe reading documentation comes naturally to me in part because of the amount of legal research/analysis I have done, 
