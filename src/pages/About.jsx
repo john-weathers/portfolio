@@ -10,17 +10,20 @@ const About = () => {
         <div className='summary'>
           <h1 className='highlight'>About me.</h1>
           <div className='sub-container'>
-            <p>I started developing software in June 2022. I thoroughly enjoy programming and building software and see it as my natural vocation. 
-              I am looking for a full-time position as a software developer/engineer with a company that can provide good growth potential. 
-              My focus has been on full-stack web development. I want to continue building/expanding my skillset as a developer and, being a quick learner, 
-              I know I will provide great value for any organization that I work with. </p>
-            <p>Prior to starting software development, the bulk of my work was in the legal field, which in my opinion helped jumpstart my learning. 
-              For example, I believe reading documentation comes naturally to me in part because of the amount of legal research/analysis I have done, 
-              both of which require a strong attention to detail. Also, both professions are very logic heavy. </p>
-            <p>In addition, I am very familiar with working under tight deadlines (this is a constant in the legal field) 
-              and have a track record of delivering as well as being a positive impact team member. 
-              Finally, my experience working with an animal welfare focused cryptocurrency project shows my ability to work as a self-starter in a unique setting, 
-              with minimal instruction, if needed.</p>
+            <p>
+              I am a highly motivated web developer looking for an entry-level/junior position with growth potential. 
+              I have experience both in the front end and back end, so I am open to roles focusing on any part of the stack. Please see the projects 
+              section of this website for some examples of work I've done.
+            </p>
+            <p>
+              Prior to being a developer I worked in both the legal and blockchain industries – my experience in these positions add to my value as a software developer. 
+              The legal field is incredibly logic and detail focused where you must be well-versed in research/analysis/reading (legal) documentation. 
+              You must also be accustomed to working under immense pressure with tight deadlines. 
+              The blockchain industry requires a self-starter who can thrive no matter what, even when guidance is minimal and waters are uncharted.
+            </p>
+            <p>
+              If you are interested, you can download my resume below.
+            </p>
           </div>
         </div>
         <div className='resume'>
