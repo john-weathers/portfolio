@@ -4,7 +4,7 @@ import '../css/projects.css';
 
 const projects = {
   fixerApp: [['fixer', 'app'], 'Full-stack MERN app for hiring repair professionals', 'https://fixerapp.johnweathers.dev', '#680982'],
-  comingSoon: ['coming soon...', 'This project and description is coming soon...', '/comingSoon', null],
+  hotTopics: ['HotTopics', 'Full-stack web app, Reddit meets Snapchat', 'https://github.com/john-weathers/topics', '#f2440f'],
 }
 
 const Projects = () => {
@@ -27,10 +27,11 @@ const Projects = () => {
           </div>
           <div className='card'>
             <button 
-              onClick={() => setProject(projects.comingSoon)} 
-              className={project[2] === projects.comingSoon[2] ? 'clicked destyled-btn' : 'destyled-btn'} 
+              onClick={() => setProject(projects.hotTopics)} 
+              className={project[2] === projects.hotTopics[2] ? 'clicked destyled-btn topics' : 'destyled-btn topics'} 
             >
-              coming soon...
+              Hot
+              <span className='topics-2'>Topics</span>
             </button>
           </div>
         </div>

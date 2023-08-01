@@ -94,6 +94,17 @@
   font-weight: 200;
 }
 
+.projects .card .topics {
+  color: red;
+  font-weight: 800;
+  background-color: rgb(250, 242, 242);
+  font-size: 36px;
+}
+
+.projects .card .topics-2 {
+  color: black;
+}
+
 @media screen and (max-width: 1080px), (orientation: portrait) {
   .projects .flex-container {
     height: fit-content;
