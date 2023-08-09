@@ -16,7 +16,7 @@ const About = () => {
               section of this website for some examples of work I've done.
             </p>
             <p>
-              Prior to being a developer I worked in both the legal and blockchain industries – my experience in these positions add to my value as a software developer. 
+              Prior to being a developer I worked in both the legal and blockchain industries – my experience in these positions adds to my value as a software developer. 
               The legal field is incredibly logic and detail focused where you must be well-versed in research/analysis/reading (legal) documentation. 
               You must also be accustomed to working under immense pressure with tight deadlines. 
               The blockchain industry requires a self-starter who can thrive no matter what, even when guidance is minimal and waters are uncharted.
