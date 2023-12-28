@@ -25,7 +25,7 @@ const Projects = () => {
               <span className='part-2'>app</span>
             </button>
           </div>
-          <div className='card'>
+          {/*<div className='card'>
             <button 
               onClick={() => setProject(projects.hotTopics)} 
               className={project[2] === projects.hotTopics[2] ? 'clicked destyled-btn topics' : 'destyled-btn topics'} 
@@ -33,7 +33,7 @@ const Projects = () => {
               Hot
               <span className='topics-2'>Topics</span>
             </button>
-          </div>
+          </div>*/}
         </div>
         <div className={project?.length > 0 ? 'description show' : 'description hide'}>
           <p>{project[1]}</p>
