@@ -30,7 +30,7 @@ const Home = () => {
             <h1>Welcome.</h1>
             <div className='emoji'>👋</div>
           </div>
-          <Link to='/projects' className='sub-title'>I am a full-stack web dev</Link>
+          <Link to='/projects' className='sub-title'>I am a CS student pursuing a career in SWE</Link>
         </div>
         <div>
           {!smallScreen ? (
