@@ -11,12 +11,11 @@ const About = () => {
           <h1 className='highlight'>About me.</h1>
           <div className='sub-container'>
             <p>
-              Computer science student with hands-on experience (1.5 years) in full-stack development and object-oriented programming,
+              Computer science student with hands-on experience (2 years) in full-stack development and object-oriented programming,
               using multiple languages. I am making a career transition after discovering an untapped passion and aptitude for
               programming. I believe I can show, through my prior experience, transferrable skills, and references, that I already have a
               strong track record of being a positive contributor to organizations as a full-time professional and would make an excellent
-              team member. I am seeking software engineering internship opportunities in summer 2024 – Montgomery/Birmingham, AL
-              area or remote.
+              team member. I am seeking software engineering internship opportunities in summer 2025.
             </p>
             <p>
               Prior to being a developer I worked in both the legal and blockchain industries – my experience in these positions adds to my value as a software developer. 
