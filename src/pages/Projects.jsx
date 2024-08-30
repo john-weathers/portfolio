@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 import '../css/projects.css';
 
 const projects = {
-  fixerApp: [['fixer', 'app'], 'Full-stack MERN app for hiring repair professionals', 'https://fixerapp.johnweathers.dev', '#680982'],
+  fixerApp: [['fixer', 'app'], 'Full-stack web app for hiring repair professionals', 'https://fixerapp.johnweathers.dev', '#680982'],
   hotTopics: ['HotTopics', 'Full-stack web app, Reddit meets Snapchat', 'https://github.com/john-weathers/topics', '#f2440f'],
 }
 
