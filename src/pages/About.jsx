@@ -15,7 +15,7 @@ const About = () => {
               using multiple languages. I am making a career transition after discovering an untapped passion and aptitude for
               programming. I believe I can show, through my prior experience, transferrable skills, and references, that I already have a
               strong track record of being a positive contributor to organizations as a full-time professional and would make an excellent
-              team member. I am seeking software engineering internship opportunities in summer 2025.
+              team member.
             </p>
             <p>
               Prior to being a developer I worked in both the legal and blockchain industries – my experience in these positions adds to my value as a software developer. 
